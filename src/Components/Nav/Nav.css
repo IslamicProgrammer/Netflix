@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  padding: 20px 0px;
+  top: 0;
+  background: transparent;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  z-index: 1;
+  /* animations */
+  transition: all 0.3s ease-in;
+}
+
+.nav__black {
+  background: #111;
+}
+
+.nav__contents {
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  position: fixed;
+  left: 20px;
+
+  width: 120px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.nav__avatar {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+}

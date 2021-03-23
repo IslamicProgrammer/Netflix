@@ -1,0 +1,80 @@
+.row {
+  color: white;
+  margin-left: 20px;
+  overflow: visible;
+}
+
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  cursor: pointer;
+  max-height: 150px;
+  object-fit: contain;
+  margin-right: 15px;
+  width: 100%;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.row__posterLarge {
+  max-height: 270px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+.row__videoContainer {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1999;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  transition: transform 2s ease;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.row__videoContainer.openVideo {
+  transform: scale(1);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: all;
+  transition: all 0.5s ease;
+}
+
+.row__videoContainer > .MuiSvgIcon-root {
+  position: absolute;
+  font-size: 30px;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.row__video {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

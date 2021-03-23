@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  padding: 60px;
+  color: gray;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.footer__links {
+  display: flex;
+  padding: 0;
+  margin-right: 40px;
+}
+
+.footer__links > .MuiSvgIcon-root {
+  margin-right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.footer__links > .MuiSvgIcon-root:hover {
+  opacity: 0.8;
+}
+
+.footer__body {
+  width: 100%;
+  display: flex;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.footer__item {
+  margin: 0 20px;
+}
+
+.footer__item > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.footer__item > h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer__info {
+  margin-top: 20px;
+}
+
+.footer__info > h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
